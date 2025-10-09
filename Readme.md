@@ -2,6 +2,8 @@
 
 This repository contains sample projects demonstrating automated testing using **Selenium** for UI automation and **Rest Assured** for API testing. Each project includes example test cases to help you get started with automation frameworks in Java.
 
+This project uses **Strategy Design Pattern** for Selenium WebDriver initiation for use-cases like local execution, headless execution, containerize execution using docker and different browser types like Chrome, Firefox.
+
 ---
 
 ## Pre-requisites
