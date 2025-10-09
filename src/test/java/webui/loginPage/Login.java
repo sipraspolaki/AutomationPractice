@@ -41,7 +41,7 @@ public class Login extends BaseFactory {
 
     @AfterClass
     public void tearDown() {
-        driver.close();
+        driver.quit();
         log.info("Browser closed successfully");
     }
     

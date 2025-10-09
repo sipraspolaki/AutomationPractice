@@ -21,7 +21,7 @@ public class UIUtils extends BaseFactory {
 	public void takeScreenShot() throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File srcFile=ts.getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(srcFile,new File(System.getProperty("user.dir")+"/Screenshots/"+ System.currentTimeMillis()+".png"));
+		FileUtils.copyFile(srcFile,new File(System.getProperty("user.dir")+File.separator+"Screenshots"+File.separator+ System.currentTimeMillis()+".png"));
 	}
 
     // Utility method for explicit wait checking visibility of an element

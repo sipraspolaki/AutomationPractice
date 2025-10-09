@@ -220,3 +220,218 @@
 [INFO ] 2025-08-24 23:23:25.116 [main] APITests - PUT API Test Passed with phone price: 799.99
 [INFO ] 2025-08-24 23:23:25.298 [main] APITests - DELETE Response: {"message":"Object with id = ff8081819782e69e0198dd36aca21f1c has been deleted."}
 [INFO ] 2025-08-24 23:23:25.565 [main] APITests - DELETE API Test Passed, phone deleted successfully
+[DEBUG] 2025-10-09 21:46:20.494 [main] TestNG - suiteXmlPath: "C:\Users\Reetanshu Kumar\Documents\GitHub\selenium-restassured-automation\src\main\resources\testng.xml"
+[INFO ] 2025-10-09 21:46:25.095 [main] Login - login successfull
+[INFO ] 2025-10-09 21:46:25.267 [main] Login - Page title: Swag Labs
+[INFO ] 2025-10-09 21:46:25.312 [main] Login - Login test passed with product count as: 6
+[INFO ] 2025-10-09 21:46:25.511 [main] Login - Browser closed successfully
+[INFO ] 2025-10-09 21:46:27.313 [main] APITests - POST Response to phone creation : {"id":"ff8081819782e69e0199c9c293ff06e5","name":"Apple IPhone 13-RK","createdAt":"2025-10-09T16:16:36.351+00:00","data":{"year":2021,"price":899.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 21:46:28.065 [main] APITests - Device ID: ff8081819782e69e0199c9c293ff06e5
+[INFO ] 2025-10-09 21:46:28.421 [main] APITests - GET API Test Passed with phone name: Apple IPhone 13-RK
+[INFO ] 2025-10-09 21:46:28.698 [main] APITests - PUT Response to phone update: {"id":"ff8081819782e69e0199c9c293ff06e5","name":"Apple IPhone 13-RK","updatedAt":"2025-10-09T16:16:37.864+00:00","data":{"year":2021,"price":799.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 21:46:28.733 [main] APITests - PUT API Test Passed with phone price: 799.99
+[INFO ] 2025-10-09 21:46:29.005 [main] APITests - DELETE Response: {"message":"Object with id = ff8081819782e69e0199c9c293ff06e5 has been deleted."}
+[INFO ] 2025-10-09 21:46:29.313 [main] APITests - DELETE API Test Passed, phone deleted successfully
+[DEBUG] 2025-10-09 22:07:07.958 [main] TestNG - suiteXmlPath: "C:\Users\Reetanshu Kumar\Documents\GitHub\selenium-restassured-automation\src\main\resources\testng.xml"
+[DEBUG] 2025-10-09 22:13:42.995 [main] TestNG - suiteXmlPath: "C:\Users\Reetanshu Kumar\Documents\GitHub\selenium-restassured-automation\src\main\resources\testng.xml"
+[DEBUG] 2025-10-09 22:18:11.544 [main] TestNG - suiteXmlPath: "C:\Users\Reetanshu Kumar\Documents\GitHub\selenium-restassured-automation\src\main\resources\testng.xml"
+[ERROR] 2025-10-09 22:18:11.847 [main] BaseFactory - Test Execution Strategy has not been setup in property file
+[INFO ] 2025-10-09 22:18:15.011 [main] Login - login successfull
+[INFO ] 2025-10-09 22:18:15.271 [main] Login - Page title: Swag Labs
+[INFO ] 2025-10-09 22:18:15.326 [main] Login - Login test passed with product count as: 6
+[INFO ] 2025-10-09 22:18:15.591 [main] Login - Browser closed successfully
+[INFO ] 2025-10-09 22:18:17.955 [main] APITests - POST Response to phone creation : {"id":"ff8081819782e69e0199c9dfbbbc073b","name":"Apple IPhone 13-RK","createdAt":"2025-10-09T16:48:27.068+00:00","data":{"year":2021,"price":899.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:18:18.652 [main] APITests - Device ID: ff8081819782e69e0199c9dfbbbc073b
+[INFO ] 2025-10-09 22:18:18.929 [main] APITests - GET API Test Passed with phone name: Apple IPhone 13-RK
+[INFO ] 2025-10-09 22:18:19.136 [main] APITests - PUT Response to phone update: {"id":"ff8081819782e69e0199c9dfbbbc073b","name":"Apple IPhone 13-RK","updatedAt":"2025-10-09T16:48:28.342+00:00","data":{"year":2021,"price":799.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:18:19.181 [main] APITests - PUT API Test Passed with phone price: 799.99
+[INFO ] 2025-10-09 22:18:19.449 [main] APITests - DELETE Response: {"message":"Object with id = ff8081819782e69e0199c9dfbbbc073b has been deleted."}
+[INFO ] 2025-10-09 22:18:19.665 [main] APITests - DELETE API Test Passed, phone deleted successfully
+[DEBUG] 2025-10-09 22:19:45.715 [main] TestNG - suiteXmlPath: "C:\Users\Reetanshu Kumar\Documents\GitHub\selenium-restassured-automation\src\main\resources\testng.xml"
+[ERROR] 2025-10-09 22:19:46.084 [main] BaseFactory - Test Execution Strategy has not been setup in property file
+[INFO ] 2025-10-09 22:19:48.237 [main] Login - login successfull
+[INFO ] 2025-10-09 22:19:48.466 [main] Login - Page title: Swag Labs
+[INFO ] 2025-10-09 22:19:48.518 [main] Login - Login test passed with product count as: 6
+[INFO ] 2025-10-09 22:19:48.862 [main] Login - Browser closed successfully
+[INFO ] 2025-10-09 22:19:50.462 [main] APITests - POST Response to phone creation : {"id":"ff8081819782e69e0199c9e1252b073f","name":"Apple IPhone 13-RK","createdAt":"2025-10-09T16:49:59.595+00:00","data":{"year":2021,"price":899.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:19:51.104 [main] APITests - Device ID: ff8081819782e69e0199c9e1252b073f
+[INFO ] 2025-10-09 22:19:51.471 [main] APITests - GET API Test Passed with phone name: Apple IPhone 13-RK
+[INFO ] 2025-10-09 22:19:51.748 [main] APITests - PUT Response to phone update: {"id":"ff8081819782e69e0199c9e1252b073f","name":"Apple IPhone 13-RK","updatedAt":"2025-10-09T16:50:00.917+00:00","data":{"year":2021,"price":799.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:19:51.789 [main] APITests - PUT API Test Passed with phone price: 799.99
+[INFO ] 2025-10-09 22:19:52.058 [main] APITests - DELETE Response: {"message":"Object with id = ff8081819782e69e0199c9e1252b073f has been deleted."}
+[INFO ] 2025-10-09 22:19:52.364 [main] APITests - DELETE API Test Passed, phone deleted successfully
+[DEBUG] 2025-10-09 22:20:53.418 [main] TestNG - suiteXmlPath: "C:\Users\Reetanshu Kumar\Documents\GitHub\selenium-restassured-automation\src\main\resources\testng.xml"
+[ERROR] 2025-10-09 22:20:53.729 [main] BaseFactory - Test Execution Strategy has not been setup in property file
+[INFO ] 2025-10-09 22:20:56.113 [main] Login - login successfull
+[INFO ] 2025-10-09 22:20:56.339 [main] Login - Page title: Swag Labs
+[INFO ] 2025-10-09 22:20:56.421 [main] Login - Login test passed with product count as: 6
+[INFO ] 2025-10-09 22:20:56.737 [main] Login - Browser closed successfully
+[INFO ] 2025-10-09 22:20:58.671 [main] APITests - POST Response to phone creation : {"id":"ff8081819782e69e0199c9e22f1f0743","name":"Apple IPhone 13-RK","createdAt":"2025-10-09T16:51:07.679+00:00","data":{"year":2021,"price":899.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:20:59.250 [main] APITests - Device ID: ff8081819782e69e0199c9e22f1f0743
+[INFO ] 2025-10-09 22:20:59.534 [main] APITests - GET API Test Passed with phone name: Apple IPhone 13-RK
+[INFO ] 2025-10-09 22:20:59.951 [main] APITests - PUT Response to phone update: {"id":"ff8081819782e69e0199c9e22f1f0743","name":"Apple IPhone 13-RK","updatedAt":"2025-10-09T16:51:09.043+00:00","data":{"year":2021,"price":799.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:21:00.009 [main] APITests - PUT API Test Passed with phone price: 799.99
+[INFO ] 2025-10-09 22:21:00.361 [main] APITests - DELETE Response: {"message":"Object with id = ff8081819782e69e0199c9e22f1f0743 has been deleted."}
+[INFO ] 2025-10-09 22:21:00.666 [main] APITests - DELETE API Test Passed, phone deleted successfully
+[DEBUG] 2025-10-09 22:22:18.149 [main] TestNG - suiteXmlPath: "C:\Users\Reetanshu Kumar\Documents\GitHub\selenium-restassured-automation\src\main\resources\testng.xml"
+[ERROR] 2025-10-09 22:22:18.471 [main] BaseFactory - Test Execution Strategy has not been setup in property file
+[INFO ] 2025-10-09 22:22:21.126 [main] Login - login successfull
+[INFO ] 2025-10-09 22:22:21.379 [main] Login - Page title: Swag Labs
+[INFO ] 2025-10-09 22:22:21.499 [main] Login - Login test passed with product count as: 6
+[INFO ] 2025-10-09 22:22:21.824 [main] Login - Browser closed successfully
+[INFO ] 2025-10-09 22:22:23.645 [main] APITests - POST Response to phone creation : {"id":"ff8081819782e69e0199c9e37b800746","name":"Apple IPhone 13-RK","createdAt":"2025-10-09T16:52:32.768+00:00","data":{"year":2021,"price":899.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:22:24.321 [main] APITests - Device ID: ff8081819782e69e0199c9e37b800746
+[INFO ] 2025-10-09 22:22:24.656 [main] APITests - GET API Test Passed with phone name: Apple IPhone 13-RK
+[INFO ] 2025-10-09 22:22:25.042 [main] APITests - PUT Response to phone update: {"id":"ff8081819782e69e0199c9e37b800746","name":"Apple IPhone 13-RK","updatedAt":"2025-10-09T16:52:34.084+00:00","data":{"year":2021,"price":799.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:22:25.088 [main] APITests - PUT API Test Passed with phone price: 799.99
+[INFO ] 2025-10-09 22:22:25.350 [main] APITests - DELETE Response: {"message":"Object with id = ff8081819782e69e0199c9e37b800746 has been deleted."}
+[INFO ] 2025-10-09 22:22:25.658 [main] APITests - DELETE API Test Passed, phone deleted successfully
+[DEBUG] 2025-10-09 22:25:11.758 [main] TestNG - suiteXmlPath: "C:\Users\Reetanshu Kumar\Documents\GitHub\selenium-restassured-automation\src\main\resources\testng.xml"
+[ERROR] 2025-10-09 22:25:12.076 [main] BaseFactory - Test Execution Strategy has not been setup in property file
+[INFO ] 2025-10-09 22:25:14.404 [main] Login - login successfull
+[INFO ] 2025-10-09 22:25:14.592 [main] Login - Page title: Swag Labs
+[INFO ] 2025-10-09 22:25:14.636 [main] Login - Login test passed with product count as: 6
+[INFO ] 2025-10-09 22:25:14.868 [main] Login - Browser closed successfully
+[INFO ] 2025-10-09 22:25:16.839 [main] APITests - POST Response to phone creation : {"id":"ff8081819782e69e0199c9e61fc4074d","name":"Apple IPhone 13-RK","createdAt":"2025-10-09T16:55:25.892+00:00","data":{"year":2021,"price":899.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:25:17.488 [main] APITests - Device ID: ff8081819782e69e0199c9e61fc4074d
+[INFO ] 2025-10-09 22:25:17.747 [main] APITests - GET API Test Passed with phone name: Apple IPhone 13-RK
+[INFO ] 2025-10-09 22:25:17.995 [main] APITests - PUT Response to phone update: {"id":"ff8081819782e69e0199c9e61fc4074d","name":"Apple IPhone 13-RK","updatedAt":"2025-10-09T16:55:27.181+00:00","data":{"year":2021,"price":799.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:25:18.037 [main] APITests - PUT API Test Passed with phone price: 799.99
+[INFO ] 2025-10-09 22:25:18.303 [main] APITests - DELETE Response: {"message":"Object with id = ff8081819782e69e0199c9e61fc4074d has been deleted."}
+[INFO ] 2025-10-09 22:25:18.536 [main] APITests - DELETE API Test Passed, phone deleted successfully
+[DEBUG] 2025-10-09 22:30:25.086 [main] TestNG - suiteXmlPath: "C:\Users\Reetanshu Kumar\Documents\GitHub\selenium-restassured-automation\src\main\resources\testng.xml"
+[ERROR] 2025-10-09 22:30:25.466 [main] BaseFactory - Test Execution Strategy has not been setup in property file
+[INFO ] 2025-10-09 22:30:27.607 [main] Login - login successfull
+[INFO ] 2025-10-09 22:30:27.871 [main] Login - Page title: Swag Labs
+[INFO ] 2025-10-09 22:30:27.936 [main] Login - Login test passed with product count as: 6
+[INFO ] 2025-10-09 22:30:28.277 [main] Login - Browser closed successfully
+[INFO ] 2025-10-09 22:30:30.046 [main] APITests - POST Response to phone creation : {"id":"ff8081819782e69e0199c9eae78f075d","name":"Apple IPhone 13-RK","createdAt":"2025-10-09T17:00:39.183+00:00","data":{"year":2021,"price":899.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:30:30.818 [main] APITests - Device ID: ff8081819782e69e0199c9eae78f075d
+[INFO ] 2025-10-09 22:30:31.116 [main] APITests - GET API Test Passed with phone name: Apple IPhone 13-RK
+[INFO ] 2025-10-09 22:30:31.344 [main] APITests - PUT Response to phone update: {"id":"ff8081819782e69e0199c9eae78f075d","name":"Apple IPhone 13-RK","updatedAt":"2025-10-09T17:00:40.543+00:00","data":{"year":2021,"price":799.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:30:31.380 [main] APITests - PUT API Test Passed with phone price: 799.99
+[INFO ] 2025-10-09 22:30:31.614 [main] APITests - DELETE Response: {"message":"Object with id = ff8081819782e69e0199c9eae78f075d has been deleted."}
+[INFO ] 2025-10-09 22:30:31.852 [main] APITests - DELETE API Test Passed, phone deleted successfully
+[DEBUG] 2025-10-09 22:32:55.057 [main] TestNG - suiteXmlPath: "C:\Users\Reetanshu Kumar\Documents\GitHub\selenium-restassured-automation\src\main\resources\testng.xml"
+[ERROR] 2025-10-09 22:32:55.424 [main] BaseFactory - Test Execution Strategy has not been setup in property file
+[INFO ] 2025-10-09 22:32:58.246 [main] Login - login successfull
+[INFO ] 2025-10-09 22:32:58.478 [main] Login - Page title: Swag Labs
+[INFO ] 2025-10-09 22:32:58.609 [main] Login - Login test passed with product count as: 6
+[INFO ] 2025-10-09 22:32:59.210 [main] Login - Browser closed successfully
+[INFO ] 2025-10-09 22:33:00.708 [main] APITests - POST Response to phone creation : {"id":"ff8081819782e69e0199c9ed34310762","name":"Apple IPhone 13-RK","createdAt":"2025-10-09T17:03:09.873+00:00","data":{"year":2021,"price":899.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:33:01.353 [main] APITests - Device ID: ff8081819782e69e0199c9ed34310762
+[INFO ] 2025-10-09 22:33:01.632 [main] APITests - GET API Test Passed with phone name: Apple IPhone 13-RK
+[INFO ] 2025-10-09 22:33:01.866 [main] APITests - PUT Response to phone update: {"id":"ff8081819782e69e0199c9ed34310762","name":"Apple IPhone 13-RK","updatedAt":"2025-10-09T17:03:11.073+00:00","data":{"year":2021,"price":799.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:33:01.888 [main] APITests - PUT API Test Passed with phone price: 799.99
+[INFO ] 2025-10-09 22:33:02.103 [main] APITests - DELETE Response: {"message":"Object with id = ff8081819782e69e0199c9ed34310762 has been deleted."}
+[INFO ] 2025-10-09 22:33:02.296 [main] APITests - DELETE API Test Passed, phone deleted successfully
+[DEBUG] 2025-10-09 22:35:55.048 [main] TestNG - suiteXmlPath: "C:\Users\Reetanshu Kumar\Documents\GitHub\selenium-restassured-automation\src\main\resources\testng.xml"
+[ERROR] 2025-10-09 22:35:55.386 [main] BaseFactory - Test Execution Strategy has not been setup in property file
+[INFO ] 2025-10-09 22:35:57.914 [main] Login - login successfull
+[INFO ] 2025-10-09 22:35:58.162 [main] Login - Page title: Swag Labs
+[INFO ] 2025-10-09 22:35:58.225 [main] Login - Login test passed with product count as: 6
+[INFO ] 2025-10-09 22:35:58.554 [main] Login - Browser closed successfully
+[INFO ] 2025-10-09 22:36:00.603 [main] APITests - POST Response to phone creation : {"id":"ff8081819782e69e0199c9eff2b50766","name":"Apple IPhone 13-RK","createdAt":"2025-10-09T17:06:09.717+00:00","data":{"year":2021,"price":899.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:36:01.391 [main] APITests - Device ID: ff8081819782e69e0199c9eff2b50766
+[INFO ] 2025-10-09 22:36:01.709 [main] APITests - GET API Test Passed with phone name: Apple IPhone 13-RK
+[INFO ] 2025-10-09 22:36:01.992 [main] APITests - PUT Response to phone update: {"id":"ff8081819782e69e0199c9eff2b50766","name":"Apple IPhone 13-RK","updatedAt":"2025-10-09T17:06:11.147+00:00","data":{"year":2021,"price":799.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:36:02.039 [main] APITests - PUT API Test Passed with phone price: 799.99
+[INFO ] 2025-10-09 22:36:02.401 [main] APITests - DELETE Response: {"message":"Object with id = ff8081819782e69e0199c9eff2b50766 has been deleted."}
+[INFO ] 2025-10-09 22:36:02.621 [main] APITests - DELETE API Test Passed, phone deleted successfully
+[DEBUG] 2025-10-09 22:42:05.861 [main] TestNG - suiteXmlPath: "C:\Users\Reetanshu Kumar\Documents\GitHub\selenium-restassured-automation\src\main\resources\testng.xml"
+[INFO ] 2025-10-09 22:42:09.155 [main] Login - login successfull
+[INFO ] 2025-10-09 22:42:09.404 [main] Login - Page title: Swag Labs
+[INFO ] 2025-10-09 22:42:09.456 [main] Login - Login test passed with product count as: 6
+[INFO ] 2025-10-09 22:42:09.825 [main] Login - Browser closed successfully
+[INFO ] 2025-10-09 22:42:11.738 [main] APITests - POST Response to phone creation : {"id":"ff8081819782e69e0199c9f59c910775","name":"Apple IPhone 13-RK","createdAt":"2025-10-09T17:12:20.881+00:00","data":{"year":2021,"price":899.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:42:12.459 [main] APITests - Device ID: ff8081819782e69e0199c9f59c910775
+[INFO ] 2025-10-09 22:42:12.732 [main] APITests - GET API Test Passed with phone name: Apple IPhone 13-RK
+[INFO ] 2025-10-09 22:42:12.988 [main] APITests - PUT Response to phone update: {"id":"ff8081819782e69e0199c9f59c910775","name":"Apple IPhone 13-RK","updatedAt":"2025-10-09T17:12:22.175+00:00","data":{"year":2021,"price":799.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:42:13.021 [main] APITests - PUT API Test Passed with phone price: 799.99
+[INFO ] 2025-10-09 22:42:13.294 [main] APITests - DELETE Response: {"message":"Object with id = ff8081819782e69e0199c9f59c910775 has been deleted."}
+[INFO ] 2025-10-09 22:42:13.601 [main] APITests - DELETE API Test Passed, phone deleted successfully
+[DEBUG] 2025-10-09 22:45:41.349 [main] TestNG - suiteXmlPath: "C:\Users\Reetanshu Kumar\Documents\GitHub\selenium-restassured-automation\src\main\resources\testng.xml"
+[INFO ] 2025-10-09 22:45:44.845 [main] Login - login successfull
+[INFO ] 2025-10-09 22:45:45.097 [main] Login - Page title: Swag Labs
+[INFO ] 2025-10-09 22:45:45.141 [main] Login - Login test passed with product count as: 6
+[INFO ] 2025-10-09 22:45:45.665 [main] Login - Browser closed successfully
+[INFO ] 2025-10-09 22:45:47.467 [main] APITests - POST Response to phone creation : {"id":"ff8081819782e69e0199c9f8e7300779","name":"Apple IPhone 13-RK","createdAt":"2025-10-09T17:15:56.592+00:00","data":{"year":2021,"price":899.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:45:48.403 [main] APITests - Device ID: ff8081819782e69e0199c9f8e7300779
+[INFO ] 2025-10-09 22:45:48.710 [main] APITests - GET API Test Passed with phone name: Apple IPhone 13-RK
+[INFO ] 2025-10-09 22:45:49.051 [main] APITests - PUT Response to phone update: {"id":"ff8081819782e69e0199c9f8e7300779","name":"Apple IPhone 13-RK","updatedAt":"2025-10-09T17:15:58.166+00:00","data":{"year":2021,"price":799.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:45:49.107 [main] APITests - PUT API Test Passed with phone price: 799.99
+[INFO ] 2025-10-09 22:45:49.360 [main] APITests - DELETE Response: {"message":"Object with id = ff8081819782e69e0199c9f8e7300779 has been deleted."}
+[INFO ] 2025-10-09 22:45:49.556 [main] APITests - DELETE API Test Passed, phone deleted successfully
+[DEBUG] 2025-10-09 22:48:23.198 [main] TestNG - suiteXmlPath: "C:\Users\Reetanshu Kumar\Documents\GitHub\selenium-restassured-automation\src\main\resources\testng.xml"
+[INFO ] 2025-10-09 22:48:26.963 [main] Login - login successfull
+[INFO ] 2025-10-09 22:48:27.231 [main] Login - Page title: Swag Labs
+[INFO ] 2025-10-09 22:48:27.285 [main] Login - Login test passed with product count as: 6
+[INFO ] 2025-10-09 22:48:27.777 [main] Login - Browser closed successfully
+[INFO ] 2025-10-09 22:48:29.709 [main] APITests - POST Response to phone creation : {"id":"ff8081819782e69e0199c9fb611a0785","name":"Apple IPhone 13-RK","createdAt":"2025-10-09T17:18:38.874+00:00","data":{"year":2021,"price":899.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:48:30.486 [main] APITests - Device ID: ff8081819782e69e0199c9fb611a0785
+[INFO ] 2025-10-09 22:48:30.800 [main] APITests - GET API Test Passed with phone name: Apple IPhone 13-RK
+[INFO ] 2025-10-09 22:48:31.052 [main] APITests - PUT Response to phone update: {"id":"ff8081819782e69e0199c9fb611a0785","name":"Apple IPhone 13-RK","updatedAt":"2025-10-09T17:18:40.241+00:00","data":{"year":2021,"price":799.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:48:31.088 [main] APITests - PUT API Test Passed with phone price: 799.99
+[INFO ] 2025-10-09 22:48:31.459 [main] APITests - DELETE Response: {"message":"Object with id = ff8081819782e69e0199c9fb611a0785 has been deleted."}
+[INFO ] 2025-10-09 22:48:31.970 [main] APITests - DELETE API Test Passed, phone deleted successfully
+[DEBUG] 2025-10-09 22:51:05.475 [main] TestNG - suiteXmlPath: "C:\Users\Reetanshu Kumar\Documents\GitHub\selenium-restassured-automation\src\main\resources\testng.xml"
+[INFO ] 2025-10-09 22:51:09.162 [main] Login - login successfull
+[INFO ] 2025-10-09 22:51:09.466 [main] Login - Page title: Swag Labs
+[INFO ] 2025-10-09 22:51:09.521 [main] Login - Login test passed with product count as: 6
+[INFO ] 2025-10-09 22:51:09.780 [main] Login - Browser closed successfully
+[INFO ] 2025-10-09 22:51:11.771 [main] APITests - POST Response to phone creation : {"id":"ff8081819782e69e0199c9fdd9c0078c","name":"Apple IPhone 13-RK","createdAt":"2025-10-09T17:21:20.832+00:00","data":{"year":2021,"price":899.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:51:12.487 [main] APITests - Device ID: ff8081819782e69e0199c9fdd9c0078c
+[INFO ] 2025-10-09 22:51:12.861 [main] APITests - GET API Test Passed with phone name: Apple IPhone 13-RK
+[INFO ] 2025-10-09 22:51:13.148 [main] APITests - PUT Response to phone update: {"id":"ff8081819782e69e0199c9fdd9c0078c","name":"Apple IPhone 13-RK","updatedAt":"2025-10-09T17:21:22.317+00:00","data":{"year":2021,"price":799.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:51:13.182 [main] APITests - PUT API Test Passed with phone price: 799.99
+[INFO ] 2025-10-09 22:51:13.458 [main] APITests - DELETE Response: {"message":"Object with id = ff8081819782e69e0199c9fdd9c0078c has been deleted."}
+[INFO ] 2025-10-09 22:51:13.664 [main] APITests - DELETE API Test Passed, phone deleted successfully
+[DEBUG] 2025-10-09 22:54:14.523 [main] TestNG - suiteXmlPath: "C:\Users\Reetanshu Kumar\Documents\GitHub\selenium-restassured-automation\src\main\resources\testng.xml"
+[INFO ] 2025-10-09 22:54:18.226 [main] Login - login successfull
+[INFO ] 2025-10-09 22:54:18.472 [main] Login - Page title: Swag Labs
+[INFO ] 2025-10-09 22:54:18.548 [main] Login - Login test passed with product count as: 6
+[INFO ] 2025-10-09 22:54:18.795 [main] Login - Browser closed successfully
+[INFO ] 2025-10-09 22:54:20.996 [main] APITests - POST Response to phone creation : {"id":"ff8081819782e69e0199ca00bd1b0793","name":"Apple IPhone 13-RK","createdAt":"2025-10-09T17:24:30.108+00:00","data":{"year":2021,"price":899.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:54:21.777 [main] APITests - Device ID: ff8081819782e69e0199ca00bd1b0793
+[INFO ] 2025-10-09 22:54:22.104 [main] APITests - GET API Test Passed with phone name: Apple IPhone 13-RK
+[INFO ] 2025-10-09 22:54:22.398 [main] APITests - PUT Response to phone update: {"id":"ff8081819782e69e0199ca00bd1b0793","name":"Apple IPhone 13-RK","updatedAt":"2025-10-09T17:24:31.571+00:00","data":{"year":2021,"price":799.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:54:22.439 [main] APITests - PUT API Test Passed with phone price: 799.99
+[INFO ] 2025-10-09 22:54:22.692 [main] APITests - DELETE Response: {"message":"Object with id = ff8081819782e69e0199ca00bd1b0793 has been deleted."}
+[INFO ] 2025-10-09 22:54:23.000 [main] APITests - DELETE API Test Passed, phone deleted successfully
+[DEBUG] 2025-10-09 22:58:01.116 [main] TestNG - suiteXmlPath: "C:\Users\Reetanshu Kumar\Documents\GitHub\selenium-restassured-automation\src\main\resources\testng.xml"
+[INFO ] 2025-10-09 22:58:04.060 [main] Login - login successfull
+[INFO ] 2025-10-09 22:58:04.211 [main] Login - Page title: Swag Labs
+[INFO ] 2025-10-09 22:58:04.272 [main] Login - Login test passed with product count as: 6
+[INFO ] 2025-10-09 22:58:04.505 [main] Login - Browser closed successfully
+[INFO ] 2025-10-09 22:58:06.071 [main] APITests - POST Response to phone creation : {"id":"ff8081819782e69e0199ca042c5f079b","name":"Apple IPhone 13-RK","createdAt":"2025-10-09T17:28:15.199+00:00","data":{"year":2021,"price":899.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:58:06.944 [main] APITests - Device ID: ff8081819782e69e0199ca042c5f079b
+[INFO ] 2025-10-09 22:58:07.282 [main] APITests - GET API Test Passed with phone name: Apple IPhone 13-RK
+[INFO ] 2025-10-09 22:58:07.573 [main] APITests - PUT Response to phone update: {"id":"ff8081819782e69e0199ca042c5f079b","name":"Apple IPhone 13-RK","updatedAt":"2025-10-09T17:28:16.725+00:00","data":{"year":2021,"price":799.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 22:58:07.597 [main] APITests - PUT API Test Passed with phone price: 799.99
+[INFO ] 2025-10-09 22:58:07.869 [main] APITests - DELETE Response: {"message":"Object with id = ff8081819782e69e0199ca042c5f079b has been deleted."}
+[INFO ] 2025-10-09 22:58:08.177 [main] APITests - DELETE API Test Passed, phone deleted successfully
+[DEBUG] 2025-10-09 23:05:56.190 [main] TestNG - suiteXmlPath: "C:\Users\Reetanshu Kumar\Documents\GitHub\selenium-restassured-automation\src\main\resources\testng.xml"
+[INFO ] 2025-10-09 23:05:59.739 [main] Login - login successfull
+[INFO ] 2025-10-09 23:05:59.973 [main] Login - Page title: Swag Labs
+[INFO ] 2025-10-09 23:06:00.036 [main] Login - Login test passed with product count as: 6
+[INFO ] 2025-10-09 23:06:00.438 [main] Login - Browser closed successfully
+[INFO ] 2025-10-09 23:06:02.550 [main] APITests - POST Response to phone creation : {"id":"ff8081819782e69e0199ca0b718f07aa","name":"Apple IPhone 13-RK","createdAt":"2025-10-09T17:36:11.663+00:00","data":{"year":2021,"price":899.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 23:06:03.206 [main] APITests - Device ID: ff8081819782e69e0199ca0b718f07aa
+[INFO ] 2025-10-09 23:06:03.541 [main] APITests - GET API Test Passed with phone name: Apple IPhone 13-RK
+[INFO ] 2025-10-09 23:06:03.828 [main] APITests - PUT Response to phone update: {"id":"ff8081819782e69e0199ca0b718f07aa","name":"Apple IPhone 13-RK","updatedAt":"2025-10-09T17:36:13.016+00:00","data":{"year":2021,"price":799.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 23:06:03.862 [main] APITests - PUT API Test Passed with phone price: 799.99
+[INFO ] 2025-10-09 23:06:04.131 [main] APITests - DELETE Response: {"message":"Object with id = ff8081819782e69e0199ca0b718f07aa has been deleted."}
+[INFO ] 2025-10-09 23:06:04.339 [main] APITests - DELETE API Test Passed, phone deleted successfully
+[DEBUG] 2025-10-09 23:09:11.301 [main] TestNG - suiteXmlPath: "C:\Users\Reetanshu Kumar\Documents\GitHub\selenium-restassured-automation\src\main\resources\testng.xml"
+[DEBUG] 2025-10-09 23:11:06.088 [main] TestNG - suiteXmlPath: "C:\Users\Reetanshu Kumar\Documents\GitHub\selenium-restassured-automation\src\main\resources\testng.xml"
+[INFO ] 2025-10-09 23:11:09.156 [main] Login - login successfull
+[INFO ] 2025-10-09 23:11:09.379 [main] Login - Page title: Swag Labs
+[INFO ] 2025-10-09 23:11:09.421 [main] Login - Login test passed with product count as: 6
+[INFO ] 2025-10-09 23:11:09.745 [main] Login - Browser closed successfully
+[INFO ] 2025-10-09 23:11:11.693 [main] APITests - POST Response to phone creation : {"id":"ff8081819782e69e0199ca10293907b6","name":"Apple IPhone 13-RK","createdAt":"2025-10-09T17:41:20.825+00:00","data":{"year":2021,"price":899.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 23:11:12.573 [main] APITests - Device ID: ff8081819782e69e0199ca10293907b6
+[INFO ] 2025-10-09 23:11:12.901 [main] APITests - GET API Test Passed with phone name: Apple IPhone 13-RK
+[INFO ] 2025-10-09 23:11:13.181 [main] APITests - PUT Response to phone update: {"id":"ff8081819782e69e0199ca10293907b6","name":"Apple IPhone 13-RK","updatedAt":"2025-10-09T17:41:22.390+00:00","data":{"year":2021,"price":799.99,"CPU model":"Google Tensor","Hard disk size":"128 GB"}}
+[INFO ] 2025-10-09 23:11:13.210 [main] APITests - PUT API Test Passed with phone price: 799.99
+[INFO ] 2025-10-09 23:11:13.483 [main] APITests - DELETE Response: {"message":"Object with id = ff8081819782e69e0199ca10293907b6 has been deleted."}
+[INFO ] 2025-10-09 23:11:13.793 [main] APITests - DELETE API Test Passed, phone deleted successfully
