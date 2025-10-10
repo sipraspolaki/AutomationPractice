@@ -43,6 +43,7 @@ public class LoginPage extends BaseFactory {
 
     public String getTitle() throws IOException {
        uiUtils.takeScreenShot(); // Capture screenshot after login
+       uiUtils.allureScreenshot("PostLoginImage"); // Capture screenshot after login and append to Allure Report
        return driver.getTitle();
     }
 }

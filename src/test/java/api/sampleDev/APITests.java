@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import com.example.automation.base.BaseFactory;
 import com.example.automation.utils.commonUtils.APIUtils;
 
+import io.qameta.allure.Allure;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
@@ -55,6 +56,7 @@ public class APITests extends BaseFactory {
         Object deviceID  = jsonPath.get("id");
         log.info("Device ID: " + deviceID);
         System.setProperty("deviceId", deviceID.toString());
+        Allure.step("Post Phone API method passed");
     }
 
     @Test(priority = 2)
@@ -70,6 +72,7 @@ public class APITests extends BaseFactory {
 
         assertEquals(actualPhoneName, expectedPhoneName, "Actual phone name "+actualPhoneName+" does not match expected "+ expectedPhoneName);
         log.info("GET API Test Passed with phone name: " + actualPhoneName);
+        Allure.step("Get Phone API method passed");
     }
 
     //@Test(priority = 3)
@@ -104,6 +107,7 @@ public class APITests extends BaseFactory {
         System.out.println("Current phone price: " + currentPhonePrice);
         assertTrue(currentPhonePrice.equals(price), "Current price is not set to:"+ price);
         log.info("PUT API Test Passed with phone price: " + currentPhonePrice);
+        Allure.step("Put Phone API method passed");
     }
     
     @Test(priority = 4)
@@ -120,5 +124,6 @@ public class APITests extends BaseFactory {
         
         assertTrue(getResponse.getStatusCode() == 404, "Phone was not deleted successfully, status code: " + getResponse.getStatusCode());
         log.info("DELETE API Test Passed, phone deleted successfully");
+        Allure.step("Delete Phone API method passed");
     }    
 }

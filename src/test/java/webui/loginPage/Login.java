@@ -14,6 +14,8 @@ import com.example.automation.base.BaseFactory;
 import com.example.automation.pages.LandingPage;
 import com.example.automation.pages.LoginPage;
 
+import io.qameta.allure.Allure;
+
 @Test(groups = {"web"})
 public class Login extends BaseFactory {
 
@@ -28,6 +30,7 @@ public class Login extends BaseFactory {
         landingPage = new LandingPage();
 		loginPage.appLogin(prop.getProperty("url"),prop.getProperty("username"), prop.getProperty("password"));
 		log.info("login successfull");
+		Allure.step("Login completed");
 	}
 
     @Test
@@ -37,12 +40,14 @@ public class Login extends BaseFactory {
         int actualProductCount = landingPage.getInventoryItemCount(); // Ensure inventory items are loaded
         assertTrue(actualProductCount > 0, "No inventory items found as actualProductCount is: " + actualProductCount );
         log.info("Login test passed with product count as: "+ actualProductCount);
+        Allure.step("Login validated successfuly");
     }
 
     @AfterClass
     public void tearDown() {
         driver.quit();
         log.info("Browser closed successfully");
+        Allure.step("Browser Closed");
     }
     
 }

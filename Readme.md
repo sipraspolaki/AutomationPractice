@@ -6,6 +6,10 @@ This project uses **Strategy Design Pattern** for Selenium WebDriver initiation 
 
 ![ClassDiagram](./Screenshots/ClassDiagram.png)
 
+Apart from TestNG report, this project also generates **Allure Report**
+
+![AllureReport](Screenshots/AllureReport.png)
+
 ---
 
 ## Pre-requisites
@@ -84,8 +88,9 @@ Typical structure (in `com.example.automation.base`):
 
 1. Clone the repository.
 2. Import the project into your favorite IDE (e.g., IntelliJ IDEA, Eclipse).
-3. Install dependencies using Maven or Gradle.
-4. Run the test cases using your test runner (TestNG or JUnit).
+3. Install dependencies using Maven.
+4. Run the test cases using your test runner or using maven `mvn test`
+5. To view Allure report, [install](https://allurereport.org/docs/install/) Allure binary and then navigate to `allure-results` folder and run `allure serve`
 
 ---
 
@@ -136,7 +141,6 @@ Readme.md                    # This file
   test-classes/
 
 ```
-
 Notes:
 - `com.example.automation.base` is where the Strategy pattern lives. Expect classes like `TestExecutionStrategy`, `LocalExecution`, `HeadlessExecution`, `ContainerizeExecution`, `BrowserType`, and the `DriverFactory`/`BaseFactory`.
 - Environment-specific properties in `/profiles` are used to set `apiBaseUrl`, `execution.strategy`, `browser.type`, and other runtime configuration values.
@@ -144,7 +148,6 @@ Notes:
 - `target/` is ignored by source control; use it to inspect test reports locally or mount it as a volume for Docker runs.
 
 ---
-
 ## Run the project
 
 After cloing the project navigate to the `SELENIUM-RESTASSURED-AUTOMATION` project and run the below MAVEN command
@@ -152,7 +155,6 @@ After cloing the project navigate to the `SELENIUM-RESTASSURED-AUTOMATION` proje
 ```bash
 mvn test
 ```
-
 ## Dockerize your project
 
 Refer the [Dockerfile](/Dockerfile) for steps to containerize this project for CI/CD runs
@@ -160,9 +162,6 @@ Refer the [Dockerfile](/Dockerfile) for steps to containerize this project for C
 ```bash
 docker build -t selenium-restassured-automation .
 ```
-
-
-
 > **Important:**  
 >In the below command passing docker bind mount `-v $PWD/docker-results:/app/target` flag is optional and should be used for local docker run, not for CI/CD. 
 
