@@ -160,10 +160,13 @@ docker build -t selenium-restassured-automation .
 ```
 
 
+
 > **Important:**  
 >In the below command passing docker bind mount `-v $PWD/docker-results:/app/target` flag is optional and should be used for local docker run, not for CI/CD. 
 
 >The Docker bind mount volume approach is used for debugging. Passing the bind mount path with the `-v` flag copies the test results from the Docker container to your local machine.
+
+> Set the `testExecutionStrategy=ce` for containerized execution in properties file under profile. 
 
 
 ```bash
