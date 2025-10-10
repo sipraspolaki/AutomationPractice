@@ -4,6 +4,8 @@ This repository contains sample projects demonstrating automated testing using *
 
 This project uses **Strategy Design Pattern** for Selenium WebDriver initiation for use-cases like local execution, headless execution, containerize execution using docker and different browser types like Chrome, Firefox.
 
+![ClassDiagram](./Screenshots/ClassDiagram.png)
+
 ---
 
 ## Pre-requisites
