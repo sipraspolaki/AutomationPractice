@@ -4,3 +4,5 @@ logs
 docker-results
 target
 .settings
+test-output
+logs
