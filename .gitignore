@@ -1,8 +1,9 @@
-Screenshot
+Screenshots
 .vscode
 logs
 docker-results
-target
+target\*
 .settings
 test-output
 logs
+allure-results

@@ -20,11 +20,12 @@ public class LocalExecution implements TestExecutionStrategy {
 			return new ChromeDriver(options);
 		case "firefox":
 			FirefoxOptions firefoxOptions = new FirefoxOptions();
-			firefoxOptions.addArguments("--incognito");
+			firefoxOptions.addArguments("-private");
 			return new FirefoxDriver(firefoxOptions);
 		case "edge":
+			System.setProperty("webdriver.edge.driver", ".\\drivers\\msedgedriver.exe");
 			EdgeOptions edgeOptions = new EdgeOptions();
-			edgeOptions.addArguments("--incognito");
+			edgeOptions.addArguments("--inprivate");
 			return new EdgeDriver(edgeOptions);
 		default:
 			return null;

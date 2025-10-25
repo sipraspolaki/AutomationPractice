@@ -21,20 +21,22 @@ public class ExcelUtils {
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
 		XSSFSheet sheet = wb.getSheet(sheetName);
 		int lastCol = sheet.getRow(0).getLastCellNum();
-		int lastRow = sheet.getLastRowNum();
+		int lastRow = sheet.getLastRowNum(); //0 based
 
-		Object[][] result = new Object[lastRow - 1][lastCol];
+		Object[][] result = new Object[lastRow][lastCol];
 
 		// Index 0 is the header row so skipping header, in XSSF row and col starts from
 		// 0 index
-		for (int i = 0; i < lastRow - 1; i++) {
+		for (int i = 0; i < lastRow; i++) {
 			for (int j = 0; j < lastCol; j++) {
-				if (sheet.getRow(i + 1).getCell(j).getCellType() == CellType.STRING) {
-					result[i][j] = sheet.getRow(i + 1).getCell(j).getStringCellValue();
-				} else if (sheet.getRow(i + 1).getCell(j).getCellType() == CellType.NUMERIC) {
-					result[i][j] = sheet.getRow(i + 1).getCell(j).getNumericCellValue();
-				} else if (sheet.getRow(i + 1).getCell(j).getCellType() == CellType.BOOLEAN) {
-					result[i][j] = sheet.getRow(i + 1).getCell(j).getBooleanCellValue();
+				Cell cell = sheet.getRow(i + 1).getCell(j);
+				
+				if (cell.getCellType() == CellType.STRING) {
+					result[i][j] = cell.getStringCellValue();
+				} else if (cell.getCellType() == CellType.NUMERIC) {
+					result[i][j] = cell.getNumericCellValue();
+				} else if (cell.getCellType() == CellType.BOOLEAN) {
+					result[i][j] = cell.getBooleanCellValue();
 				} else {
 					throw new IllegalArgumentException("Excel cell type is not supported for reading");
 				}
@@ -61,7 +63,6 @@ public class ExcelUtils {
 			//Always create row outside of inner loop which is for cell
 			Row row = sheet.createRow(newRowIndex + i);
 			for (int j = 0; j < colLimit; j++) {
-				System.out.println("!!!!!!!!!!! " + array[i][j]);
 				Cell cell = row.createCell(j);
 				
 				if (array[i][j] instanceof String)

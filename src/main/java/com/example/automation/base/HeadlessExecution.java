@@ -23,13 +23,14 @@ public class HeadlessExecution implements TestExecutionStrategy {
 		case "firefox":
 			FirefoxOptions firefoxOptions = new FirefoxOptions();
 			firefoxOptions.addArguments("--headless=new");
-			firefoxOptions.addArguments("--incognito");
+			firefoxOptions.addArguments("-private");
 			firefoxOptions.addArguments("--disable-gpu");
 			return new FirefoxDriver(firefoxOptions);
 		case "edge":
+			System.setProperty("webdriver.edge.driver", ".\\drivers\\msedgedriver.exe");
 			EdgeOptions edgeOptions = new EdgeOptions();
 			edgeOptions.addArguments("--headless=new");
-			edgeOptions.addArguments("--incognito");
+			edgeOptions.addArguments("--inprivate");
 			edgeOptions.addArguments("--disable-gpu");
 			return new EdgeDriver(edgeOptions);
 		default:

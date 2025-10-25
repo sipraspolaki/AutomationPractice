@@ -26,7 +26,7 @@ public class ContainerizeExecution implements TestExecutionStrategy {
 			return new ChromeDriver();
 		case "firefox":
 			FirefoxOptions firefoxOptions = new FirefoxOptions();
-			firefoxOptions.addArguments("--incognito");
+			firefoxOptions.addArguments("-private");
 			firefoxOptions.addArguments("--headless");
 			firefoxOptions.addArguments("--disable-gpu");
 			firefoxOptions.addArguments("--no-sandbox");
@@ -35,8 +35,9 @@ public class ContainerizeExecution implements TestExecutionStrategy {
 			firefoxOptions.addArguments("--user-data-dir=/tmp/chrome-user-data-" + System.currentTimeMillis());
 			return new FirefoxDriver();
 		case "edge":
+			System.setProperty("webdriver.edge.driver", ".\\drivers\\msedgedriver.exe");
 			EdgeOptions edgeOptions = new EdgeOptions();
-			edgeOptions.addArguments("--incognito");
+			edgeOptions.addArguments("--inprivate");
 			edgeOptions.addArguments("--headless=new");
 			edgeOptions.addArguments("--disable-gpu");
 			edgeOptions.addArguments("--no-sandbox");
