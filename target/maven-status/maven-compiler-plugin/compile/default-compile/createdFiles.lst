@@ -1,10 +1,12 @@
 com\example\automation\base\TestExecutionStrategy.class
-com\example\automation\base\BaseFactory.class
 com\example\automation\base\HeadlessExecution.class
 com\example\automation\pages\LandingPage.class
+com\example\automation\utils\commonUtils\ExcelUtils.class
+com\example\automation\base\ContainerizeExecution.class
+com\example\automation\utils\commonUtils\UIUtils.class
+com\example\automation\utils\commonUtils\DataProviderClass.class
+com\example\automation\base\BaseFactory.class
 com\example\automation\utils\commonUtils\APIUtils.class
 com\example\automation\base\LocalExecution.class
-com\example\automation\base\ContainerizeExecution.class
 com\example\automation\pages\LoginPage.class
-com\example\automation\utils\commonUtils\UIUtils.class
 com\example\automation\base\DriverContext.class
