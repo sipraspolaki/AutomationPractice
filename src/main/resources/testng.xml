@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Automation Test Suite">
+	<test name="WebUI Test Cases Chrome">
+		<parameter name="browser" value="chrome"/>
+		<groups>
+			<run>
+				<include name="web"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="webui.loginPage.Login"></class>
+		</classes>
+	</test>
+	<test name="WebUI Test Cases Firefox">
+		<parameter name="browser" value="firefox"/>
+		<groups>
+			<run>
+				<include name="web"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="webui.loginPage.Login"></class>
+		</classes>
+	</test>
+	<test name="WebUI Test Cases Edge">
+		<parameter name="browser" value="edge"/>
+		<groups>
+			<run>
+				<include name="web"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="webui.loginPage.Login"></class>
+		</classes>
+	</test>
+	<test name="API Test Cases">
+		<groups>
+			<run>
+				<include name="api"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="api.sampleDev.APITests"></class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-10T23:07:56 IST" name="Test Automation Test Suite" finished-at="2025-10-10T23:08:03 IST" duration-ms="7588">
+    <groups>
+      <group name="web">
+        <method signature="Login.validateLogin()[pri:0, instance:webui.loginPage.Login@61a5b4ae]" name="validateLogin" class="webui.loginPage.Login"/>
+      </group> <!-- web -->
+      <group name="api">
+        <method signature="APITests.postPhoneAPI()[pri:1, instance:api.sampleDev.APITests@3b718392]" name="postPhoneAPI" class="api.sampleDev.APITests"/>
+        <method signature="APITests.getPhoneAPI()[pri:2, instance:api.sampleDev.APITests@3b718392]" name="getPhoneAPI" class="api.sampleDev.APITests"/>
+        <method signature="APITests.putPhoneAPI()[pri:3, instance:api.sampleDev.APITests@3b718392]" name="putPhoneAPI" class="api.sampleDev.APITests"/>
+        <method signature="APITests.deletePhoneAPI()[pri:4, instance:api.sampleDev.APITests@3b718392]" name="deletePhoneAPI" class="api.sampleDev.APITests"/>
+      </group> <!-- api -->
+    </groups>
+    <test started-at="2025-10-10T23:07:56 IST" name="WebUI Test Cases" finished-at="2025-10-10T23:07:58 IST" duration-ms="2573">
+      <class name="webui.loginPage.Login">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webui.loginPage.Login@61a5b4ae]" started-at="2025-10-10T23:07:56 IST" name="setUp" finished-at="2025-10-10T23:07:57 IST" duration-ms="1823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateLogin()[pri:0, instance:webui.loginPage.Login@61a5b4ae]" started-at="2025-10-10T23:07:57 IST" name="validateLogin" finished-at="2025-10-10T23:07:58 IST" duration-ms="392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webui.loginPage.Login@61a5b4ae]" started-at="2025-10-10T23:07:58 IST" name="tearDown" finished-at="2025-10-10T23:07:58 IST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- webui.loginPage.Login -->
+    </test> <!-- WebUI Test Cases -->
+    <test started-at="2025-10-10T23:07:58 IST" name="API Test Cases" finished-at="2025-10-10T23:08:03 IST" duration-ms="4982">
+      <class name="api.sampleDev.APITests">
+        <test-method is-config="true" signature="driverInitialization()[pri:0, instance:api.sampleDev.APITests@3b718392]" started-at="2025-10-10T23:07:53 IST" name="driverInitialization" finished-at="2025-10-10T23:07:56 IST" duration-ms="2368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInitialization -->
+        <test-method signature="postPhoneAPI()[pri:1, instance:api.sampleDev.APITests@3b718392]" started-at="2025-10-10T23:07:58 IST" name="postPhoneAPI" finished-at="2025-10-10T23:08:01 IST" duration-ms="3285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postPhoneAPI -->
+        <test-method signature="getPhoneAPI()[pri:2, instance:api.sampleDev.APITests@3b718392]" started-at="2025-10-10T23:08:01 IST" name="getPhoneAPI" finished-at="2025-10-10T23:08:02 IST" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPhoneAPI -->
+        <test-method signature="putPhoneAPI()[pri:3, instance:api.sampleDev.APITests@3b718392]" started-at="2025-10-10T23:08:02 IST" name="putPhoneAPI" finished-at="2025-10-10T23:08:02 IST" duration-ms="326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putPhoneAPI -->
+        <test-method signature="deletePhoneAPI()[pri:4, instance:api.sampleDev.APITests@3b718392]" started-at="2025-10-10T23:08:02 IST" name="deletePhoneAPI" finished-at="2025-10-10T23:08:03 IST" duration-ms="1051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePhoneAPI -->
+      </class> <!-- api.sampleDev.APITests -->
+    </test> <!-- API Test Cases -->
+  </suite> <!-- Test Automation Test Suite -->
+</testng-results>

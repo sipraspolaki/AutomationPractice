@@ -1,0 +1,185 @@
+# Selenium & Rest Assured API Sample Projects
+
+This repository contains sample projects demonstrating automated testing using **Selenium** for UI automation and **Rest Assured** for API testing. Each project includes example test cases to help you get started with automation frameworks in Java.
+
+This project uses **Strategy Design Pattern** for Selenium WebDriver initiation for use-cases like local execution, headless execution, containerize execution using docker and different browser types like Chrome, Firefox.
+
+![ClassDiagram](./Screenshots/ClassDiagram.png)
+
+Apart from TestNG report, this project also generates **Allure Report**
+
+![AllureReport](Screenshots/AllureReport.png)
+
+---
+
+## Pre-requisites
+
+Before you begin, ensure you have the following installed on your system:
+
+- **Java 17 JDK**
+    - [Download Java 17](https://adoptium.net/temurin/releases/?version=17)
+    - Verify installation: `java -version`
+- **Maven 3.6+**
+    - [Download Maven](https://maven.apache.org/download.cgi)
+    - Verify installation: `mvn -version`
+- **Google Chrome** (for Selenium UI tests)
+    - [Download Chrome](https://www.google.com/chrome/)
+- **ChromeDriver** (if not using WebDriverManager)
+    - [Download ChromeDriver](https://sites.google.com/chromium.org/driver/)
+- **Git** (to clone the repository)
+    - [Download Git](https://git-scm.com/downloads)
+
+---
+
+## Execution Strategy & Browser Selection (Strategy pattern)
+
+This project uses the Strategy design pattern in the `automation.base` package to select:
+- Test execution strategy (e.g., `LOCAL`, `HEADLESS`, or `Containerize/DOCKER`) and
+- Browser type (e.g., `CHROME`, `FIREFOX`)
+
+The Strategy pattern decouples WebDriver initialization from test logic so you can switch execution targets without changing test code.
+
+Typical structure (in `com.example.automation.base`):
+
+- TestExecutionStrategy (interface) — defines setupDriver()
+- LocalExecution, HeadlessExecution, ContainerizeExecution — Implement TestExecutionStrategy Interface method `setupDriver()` for driver initiation in different mode
+- BrowserType — `CHROME`, `FIREFOX`, etc. passed via properties file under profiles
+- testExecutionStrategy - `le -> local execution, he -> headless execution , ce -> containerize execution` passed via properties file under profiles
+
+---
+
+## Selenium Sample Project
+
+**Selenium** is a popular tool for automating web browsers. The sample project includes:
+
+- **Setup Instructions:** How to configure Selenium WebDriver.
+- **Sample Test Cases:**
+    - Launching a browser and navigating to a website.
+    - Performing actions like clicking buttons, filling forms, and validating page content.
+    - Assertions to verify expected outcomes.
+
+**Technologies Used:**  
+- Java  
+- Selenium WebDriver  
+- TestNG/JUnit (for test management)
+
+---
+
+## Rest Assured API Sample Project
+
+**Rest Assured** is a Java library for testing RESTful APIs. The sample project includes:
+
+- **Setup Instructions:** How to add Rest Assured dependencies.
+- **Sample Test Cases:**
+    - Sending GET, POST, PUT, DELETE requests.
+    - Validating response status codes and response bodies.
+    - Using JSON path for response assertions.
+    - Chaining API requests (e.g., create, update, delete a resource).
+    - Grouping and prioritizing tests using TestNG.
+
+**Technologies Used:**  
+- Java  
+- Rest Assured  
+- TestNG/JUnit
+
+---
+
+## Getting Started
+
+1. Clone the repository.
+2. Import the project into your favorite IDE (e.g., IntelliJ IDEA, Eclipse).
+3. Install dependencies using Maven.
+4. Run the test cases using your test runner or using maven `mvn test`
+5. To view Allure report, [install](https://allurereport.org/docs/install/) Allure binary and then navigate to `allure-results` folder and run `allure serve`
+
+---
+
+## Folder Structure (detailed)
+
+Below is a detailed view of the repository layout with short descriptions for important folders and files. Paths are relative to the project root.
+
+```
+pom.xml                      # Maven project file (dependencies, plugins, build)
+Dockerfile                   # Optional: containerize test execution
+Readme.md                    # This file
+
+/logs/                       # Locally generated logs
+  LogsGenerated.log
+
+/profiles/                    # Environment-specific properties
+  dev.properties
+  pre-prod.properties
+  qa.properties
+
+/screenshots/                 # Test-run screenshots (archival)
+  <timestamp>.png
+
+/src/
+  main/
+    java/
+      com/example/automation/
+        base/                  # BaseFactory/DriverFactory and strategy classes
+        utils/                 # Utility classes (e.g., API utils, common helpers)
+        ...                    # Additional production code if any
+    resources/
+      log4j2.properties       # Logging configuration
+      testng.xml              # TestNG suite configuration used at runtime
+
+  test/
+    java/
+      api/                   # REST-Assured API tests
+        sampleDev/
+          APITests.java
+      webui/                  # Selenium Web UI tests
+        loginPage/
+          Login.java
+    resources/                # test resources (if any)
+
+/target/                      # Build output (generated by Maven - do not commit)
+  classes/
+  surefire-reports/           # TestNG/JUnit reports (HTML, XML)
+  test-classes/
+
+```
+Notes:
+- `com.example.automation.base` is where the Strategy pattern lives. Expect classes like `TestExecutionStrategy`, `LocalExecution`, `HeadlessExecution`, `ContainerizeExecution`, `BrowserType`, and the `DriverFactory`/`BaseFactory`.
+- Environment-specific properties in `/profiles` are used to set `apiBaseUrl`, `execution.strategy`, `browser.type`, and other runtime configuration values.
+- `testng.xml` (in `src/main/resources`) defines test groups and suites. Use it to control which tests run when executing `mvn test`.
+- `target/` is ignored by source control; use it to inspect test reports locally or mount it as a volume for Docker runs.
+
+---
+## Run the project
+
+After cloing the project navigate to the `SELENIUM-RESTASSURED-AUTOMATION` project and run the below MAVEN command
+
+```bash
+mvn test
+```
+## Dockerize your project
+
+Refer the [Dockerfile](/Dockerfile) for steps to containerize this project for CI/CD runs
+
+```bash
+docker build -t selenium-restassured-automation .
+```
+> **Important:**  
+>In the below command passing docker bind mount `-v $PWD/docker-results:/app/target` flag is optional and should be used for local docker run, not for CI/CD. 
+
+>The Docker bind mount volume approach is used for debugging. Passing the bind mount path with the `-v` flag copies the test results from the Docker container to your local machine.
+
+> Set the `testExecutionStrategy=ce` for containerized execution in properties file under profile. 
+
+
+```bash
+docker run -v $PWD/docker-results:/app/target --rm selenium-restassured-automation
+```
+
+## Contribution
+
+Feel free to fork the repository and submit pull requests for improvements or additional test cases.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
