@@ -1,2 +1,12 @@
 /classes/
 /test-classes/
+target/
+allure-results/
+allure-report/
+logs/
+Screenshots/
+docker-results/
+*.log
+.idea/
+.vscode/
+*.iml
